@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- My PCB Project Specific Ignores ---
+
+
+PCB_DATASET/PCB_DATASET
+PCB_DATASET
+
+
+Annotations/
+images/
+
+
+ImageSub_Output/
+ROI_Output/
+
+
+*.h5
+*.tflite
