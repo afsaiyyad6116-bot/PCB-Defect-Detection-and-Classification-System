@@ -6,7 +6,7 @@ import os
 
 BASE_IMAGE_DIR = r"C:\Users\afsai\Downloads\PCB_DATASET\PCB_DATASET/images"
 TEMPLATE_DIR = r"C:\Users\afsai\Downloads\PCB_DATASET\PCB_DATASET/PCB_USED"
-OUTPUT_DIR = "PCB_FINAL"
+OUTPUT_DIR = "ImageSub_Output"
 
 categories = ['Missing_hole', 'Mouse_bite', 'Open_circuit', 'Short', 'Spur', 'Spurious_copper']
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -72,5 +72,6 @@ for cat in categories:
                     cv2.putText(res_img, label, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.4, color, 1)
 
             cv2.imwrite(os.path.join(save_path, f"res_{filename}"), res_img)
+
 
 print("Processing Complete! Check the output folders.")
