@@ -127,7 +127,7 @@ Output Features:
 Output directory structure:
 
 ```bash
-PCB_FINAL/
+ImageSub_Outputs/
    Missing_hole/
    Mouse_bite/
    Open_circuit/
