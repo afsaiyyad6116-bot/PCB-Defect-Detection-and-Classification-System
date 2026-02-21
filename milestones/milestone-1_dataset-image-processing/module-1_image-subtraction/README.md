@@ -81,8 +81,8 @@ For each detected contour:
 
 Instead of storing only binary masks, defects are visualized directly on PCB images:
 
-* 🟢 **Major Defect** → Large contour area
-* 🔴 **Minor Defect** → Small contour area
+* **Major Defect** → Large contour area(Green box)
+* **Minor Defect** → Small contour area(red box)
 
 Bounding boxes are drawn around detected defects for intuitive interpretation.
 
@@ -157,9 +157,13 @@ Example visual outputs:
 ## Evaluation Outcome
 
 ✔ Successful template-based defect comparison
+
 ✔ Robust defect localization
+
 ✔ Noise reduction achieved through preprocessing
+
 ✔ Clear visualization without relying only on binary masks
+
 ✔ Data prepared for ROI extraction (Module 2)
 
 ---
@@ -171,7 +175,7 @@ Example visual outputs:
 
 Outputs generated in this module are used in:
 
-➡ **Module 2 — Contour Detection & ROI Extraction**
+ **Module 2 — Contour Detection & ROI Extraction**
 
 where individual defect regions are cropped and prepared for CNN training.
 
