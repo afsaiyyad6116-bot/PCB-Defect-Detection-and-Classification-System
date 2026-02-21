@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 ANNOTATIONS_DIR = r"C:\Users\afsai\Downloads\PCB_DATASET\PCB_DATASET/Annotations"
 IMAGES_DIR = r"C:\Users\afsai\Downloads\PCB_DATASET\PCB_DATASET/images"
-CROP_OUTPUT_DIR = "PCB_ROI"
+CROP_OUTPUT_DIR = "ROI_Output"
 
 os.makedirs(CROP_OUTPUT_DIR, exist_ok=True)
 
@@ -57,5 +57,6 @@ for cat in os.listdir(ANNOTATIONS_DIR):
           
             crop_name = f"{xml_file.split('.')[0]}_obj{i}.jpg"
             cv2.imwrite(os.path.join(save_dir, crop_name), crop)
+
 
 print(f"\nSuccessfull '{CROP_OUTPUT_DIR}' OUTPUT Saved in folder")
